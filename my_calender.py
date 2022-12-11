@@ -1,5 +1,6 @@
 import calendar
 
+
 def get_cal_list():
     converter = {0: "Saturday", 1: "Friday", 2: "Thursday", 3: "Wednesday", 4: "Tuesday", 5: "Monday", 6: "Sunday"}
 
@@ -12,7 +13,7 @@ def get_cal_list():
         counter = 0
         week = {}
         for day in line.split()[::-1]:
-            week[converter[counter]] = day.strip()
+            week[converter[counter]] = day
             counter += 1
         cal_list.append(week)
 
